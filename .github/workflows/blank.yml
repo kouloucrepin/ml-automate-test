@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write  # ⬅️ Autorise le push
+
 jobs:
   run-and-update:
     runs-on: ubuntu-latest
